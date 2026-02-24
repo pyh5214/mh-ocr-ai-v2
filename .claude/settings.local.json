@@ -24,7 +24,9 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(git checkout:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nci: Add GitHub Actions workflow for Pages deployment\n\n- Add deploy.yml for automated GitHub Pages deployment\n- Configure Next.js for static export\n- Set basePath for GitHub Pages\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nci: Add GitHub Actions workflow for Pages deployment\n\n- Add deploy.yml for automated GitHub Pages deployment\n- Configure Next.js for static export\n- Set basePath for GitHub Pages\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(python3:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

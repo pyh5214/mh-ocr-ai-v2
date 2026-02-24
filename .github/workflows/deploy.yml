@@ -37,6 +37,11 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: List output directory
+        run: ls -la out || ls -la .next || echo "No output found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
