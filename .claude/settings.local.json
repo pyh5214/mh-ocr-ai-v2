@@ -19,7 +19,12 @@
       "Bash(git init:*)",
       "Bash(git remote remove:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: MH OCR AI v2 - Complete implementation\n\n- Landing page with feature highlights\n- File management with upload, version control\n- OCR processing workflow \\(trigger, processing, results\\)\n- Analytics dashboard with statistics\n- System history page\n- Reusable UI components \\(Modal, Toast, Badge, Button\\)\n- Next.js 16 with Tailwind CSS\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nci: Add GitHub Actions workflow for Pages deployment\n\n- Add deploy.yml for automated GitHub Pages deployment\n- Configure Next.js for static export\n- Set basePath for GitHub Pages\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
