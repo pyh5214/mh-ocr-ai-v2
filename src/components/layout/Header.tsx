@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { FileText, BarChart3, Settings, User } from "lucide-react";
+import { User } from "lucide-react";
 
 const navItems = [
-  { href: "/files", label: "파일 관리", icon: FileText },
-  { href: "/analytics", label: "통계", icon: BarChart3 },
-  { href: "/settings/history", label: "세팅", icon: Settings },
+  { href: "/files", label: "파일 관리" },
+  { href: "/analytics", label: "통계" },
+  { href: "/settings/history", label: "세팅" },
 ];
 
 const secondaryNavItems = [
@@ -20,20 +21,21 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 border-b border-[#f3f4f6]">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-[6px] bg-[rgba(255,255,255,0.8)] border-b border-[#f3f4f6]">
       <div className="h-20 px-10 flex items-center justify-between">
         {/* Left section: Logo + Navigation */}
         <div className="flex items-center gap-12">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#137fec] rounded-lg shadow-sm flex items-center justify-center">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 2L2 6V12L9 16L16 12V6L9 2Z" stroke="white" strokeWidth="1.5" strokeLinejoin="round"/>
-                <path d="M9 8V16" stroke="white" strokeWidth="1.5"/>
-                <path d="M2 6L9 10L16 6" stroke="white" strokeWidth="1.5"/>
-              </svg>
+            <div className="w-9 h-9 bg-[#137fec] rounded-[8px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] flex items-center justify-center">
+              <Image
+                src="/icons/logo-icon.png"
+                alt="MH OCR AI"
+                width={18}
+                height={18}
+              />
             </div>
-            <span className="font-bold text-lg text-gray-900">MH OCR AI</span>
+            <span className="font-bold text-lg text-[#111827]">MH OCR AI</span>
           </Link>
 
           {/* Primary Navigation */}
