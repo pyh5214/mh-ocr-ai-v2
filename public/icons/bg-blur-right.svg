@@ -1,6 +1,6 @@
 <svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 712 968" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Overlay+Blur" filter="url(#filter0_f_0_4)">
-<path d="M100 356C100 214.615 214.615 100 356 100V100C497.385 100 612 214.615 612 356V612C612 753.385 497.385 868 356 868V868C214.615 868 100 753.385 100 612V356Z" fill="var(--fill-0, #60A5FA)" fill-opacity="0.05"/>
+<path d="M100 356C100 214.615 214.615 100 356 100V100C497.385 100 612 214.615 612 356V612C612 753.385 497.385 868 356 868V868C214.615 868 100 753.385 100 612V356Z" fill="#60A5FA" fill-opacity="0.05"/>
 </g>
 <defs>
 <filter id="filter0_f_0_4" x="0" y="0" width="712" height="968" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

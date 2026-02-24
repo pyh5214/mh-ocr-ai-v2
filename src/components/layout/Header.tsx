@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { User } from "lucide-react";
@@ -28,8 +27,9 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <div className="w-9 h-9 bg-[#137fec] rounded-[8px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] flex items-center justify-center">
-              <Image
-                src="/icons/logo-icon.png"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/icons/logo-icon.svg"
                 alt="MH OCR AI"
                 width={18}
                 height={18}
