@@ -1,0 +1,93 @@
+{
+  "projectName": "MH OCR AI",
+  "figmaFileKey": "0FTlAIr64ggk2PWpIGjqtn",
+  "totalSessions": 7,
+  "completedSessions": 7,
+  "lastUpdated": "2026-02-25",
+  "sessions": {
+    "1": {
+      "status": "completed",
+      "screens": ["Landing Page (1:5251)"],
+      "files": [
+        "src/app/page.tsx",
+        "src/app/layout.tsx",
+        "src/app/globals.css",
+        "src/components/layout/Header.tsx",
+        "src/lib/utils.ts"
+      ]
+    },
+    "2": {
+      "status": "completed",
+      "screens": [
+        "File Management & Sub Main (1:8516)",
+        "New File Upload Start (1:8094)",
+        "New File Upload Select (1:6828)"
+      ],
+      "files": [
+        "src/app/files/page.tsx",
+        "src/app/files/upload/page.tsx",
+        "src/components/files/FileTable.tsx",
+        "src/components/files/FileFilters.tsx",
+        "src/components/files/FileDropzone.tsx",
+        "src/components/files/Pagination.tsx",
+        "src/components/ui/button.tsx",
+        "src/components/ui/badge.tsx",
+        "src/components/ui/input.tsx"
+      ]
+    },
+    "3": {
+      "status": "completed",
+      "screens": [
+        "Version Update_stat (1:7958)",
+        "Version Update_File Select (1:8204)",
+        "OCR Trigger (1:5394)"
+      ],
+      "files": [
+        "src/app/files/version/page.tsx",
+        "src/app/files/ocr/page.tsx"
+      ]
+    },
+    "4": {
+      "status": "completed",
+      "screens": [
+        "OCR Processing (1:5659)",
+        "OCR Detailed Result Viewer (1:6020)",
+        "Edit File Metadata (1:5532)"
+      ],
+      "files": [
+        "src/app/files/ocr/processing/page.tsx",
+        "src/app/files/ocr/result/page.tsx",
+        "src/app/files/edit/page.tsx"
+      ]
+    },
+    "5": {
+      "status": "completed",
+      "screens": [
+        "Analytics Dashboard Overview (1:7583)"
+      ],
+      "files": [
+        "src/app/analytics/page.tsx"
+      ]
+    },
+    "6": {
+      "status": "completed",
+      "screens": [
+        "file delete confirm (1:6936)",
+        "file initialize confirm (1:4950)",
+        "시스템 사용이력 상세 조회 (1:5828)"
+      ],
+      "files": [
+        "src/app/settings/history/page.tsx",
+        "src/components/ui/modal.tsx"
+      ]
+    },
+    "7": {
+      "status": "completed",
+      "description": "통합 & 마무리",
+      "files": [
+        "src/components/ui/toast.tsx",
+        "src/components/providers/Providers.tsx"
+      ]
+    }
+  }
+}
