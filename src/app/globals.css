@@ -1,25 +1,53 @@
 @import "tailwindcss";
 
 :root {
+  /* Background colors - from Figma */
   --background: #fcfdfe;
-  --foreground: #171717;
+  --background-secondary: #f8f9fb;
+  --foreground: #111827;
 
-  /* Primary colors */
+  /* Primary colors - from Figma */
   --primary: #137fec;
+  --primary-hover: #1171d6;
+  --primary-light: #e0f0ff;
   --primary-foreground: #ffffff;
 
-  /* Border colors */
+  /* Border colors - from Figma */
   --border: #f3f4f6;
   --border-secondary: #e5e7eb;
+  --border-focus: #137fec;
 
-  /* Text colors */
+  /* Text colors - from Figma */
   --text-primary: #111827;
   --text-secondary: #6b7280;
   --text-muted: #9ca3af;
+  --text-disabled: #d1d5db;
 
-  /* Card */
+  /* Card - from Figma */
   --card: #ffffff;
   --card-foreground: #111827;
+
+  /* Status colors - from Figma */
+  --success: #10b981;
+  --success-light: #d1fae5;
+  --warning: #f59e0b;
+  --warning-light: #fef3c7;
+  --error: #ef4444;
+  --error-light: #fee2e2;
+  --info: #3b82f6;
+  --info-light: #dbeafe;
+
+  /* Shadows - from Figma */
+  --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 4px 20px 0px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+
+  /* Border radius - from Figma */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
 }
 
 @theme inline {
@@ -27,14 +55,16 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-feature-settings: 'ss01' on, 'ss02' on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Scrollbar styling */
@@ -54,4 +84,111 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a1a1a1;
+}
+
+/* Glass morphism effect for header - from Figma */
+.glass-header {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Card hover effect - from Figma */
+.card-hover {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button focus ring */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Animation utilities */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+/* Table styling utilities */
+.table-row-hover:hover {
+  background-color: #f9fafb;
+}
+
+/* Badge styling */
+.badge-blue {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+.badge-green {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.badge-amber {
+  background-color: #fffbeb;
+  color: #b45309;
+}
+
+.badge-red {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.badge-purple {
+  background-color: #faf5ff;
+  color: #7c3aed;
+}
+
+.badge-cyan {
+  background-color: #ecfeff;
+  color: #0e7490;
+}
+
+.badge-pink {
+  background-color: #fdf2f8;
+  color: #be185d;
 }
